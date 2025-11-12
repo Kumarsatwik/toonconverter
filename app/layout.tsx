@@ -15,20 +15,20 @@ export const metadata: Metadata = {
   },
   description: "Convert JSON to TOON to reduce LLM token usage and improve readability.",
   applicationName: "TOON Converter",
-  metadataBase: new URL("https://toonconverter.site"),
+  metadataBase: new URL("https://toontools.site"),
   alternates: {
-    canonical: "https://toonconverter.site",
+    canonical: "https://toontools.site",
   },
   openGraph: {
     type: "website",
-    url: "https://toonconverter.site",
-    title: "TOON Converter – JSON to TOON",
+    url: "https://toontools.site",
+    title: "TOON Tools – JSON to TOON Converter",
     description: "Convert JSON to compact TOON format and save tokens.",
-    siteName: "TOON Converter",
+    siteName: "TOON Tools",
   },
   twitter: {
     card: "summary",
-    title: "TOON Converter – JSON to TOON",
+    title: "TOON Tools – JSON to TOON Converter",
     description: "Convert JSON to compact TOON format and save tokens.",
   },
   robots: {
@@ -85,17 +85,17 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "TOON Converter",
-              url: "https://toonconverter.site",
+              name: "TOON Tools",
+              url: "https://toontools.site",
               description: "Convert JSON to TOON format to reduce LLM token usage by 30-60%. Free online tool.",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://toonconverter.site/?q={search_term_string}",
+                target: "https://toontools.site/?q={search_term_string}",
                 queryInput: "required name=search_term_string",
               },
               publisher: {
                 "@type": "Organization",
-                name: "TOON Converter Team",
+                name: "TOON Tools Team",
               },
             }),
           }}
@@ -108,9 +108,9 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
-              name: "TOON Converter",
+              name: "TOON Tools",
               description: "Free online tool to convert JSON to TOON format for LLM optimization",
-              url: "https://toonconverter.site",
+              url: "https://toontools.site",
               applicationCategory: "DeveloperApplication",
               operatingSystem: "Web Browser",
               offers: {
@@ -127,7 +127,7 @@ export default function RootLayout({
               },
               author: {
                 "@type": "Organization",
-                name: "TOON Converter Team",
+                name: "TOON Tools Team",
               },
             }),
           }}
@@ -211,8 +211,8 @@ export default function RootLayout({
               step: [
                 {
                   "@type": "HowToStep",
-                  name: "Access TOON Converter",
-                  text: "Navigate to toonconverter.site in your web browser",
+                  name: "Access TOON Tools",
+                  text: "Navigate to toontools.site in your web browser",
                   position: 1,
                 },
                 {
@@ -250,7 +250,7 @@ export default function RootLayout({
                   "@type": "ListItem",
                   position: 1,
                   name: "Home",
-                  item: "https://toonconverter.site",
+                  item: "https://toontools.site",
                 },
               ],
             }),

@@ -206,7 +206,7 @@ export default function ConverterClient() {
                   placeholder={`{\n  "users": [\n    {\n      "id": 1,\n      "name": "John Doe",\n      "email": "john@example.com"\n    }\n  ]\n}`}
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
-                  className="font-mono text-sm h-80 overflow-auto custom-scrollbar resize-none"
+                  className="font-mono text-sm min-h-80 max-h-96 overflow-auto custom-scrollbar resize-none"
                   aria-invalid={!isValid}
                 />
                 {!isValid && (
@@ -257,7 +257,7 @@ export default function ConverterClient() {
                 <Textarea
                   value={output}
                   readOnly
-                  className="font-mono text-sm bg-secondary/50 h-80 resize-none overflow-auto custom-scrollbar flex-1"
+                  className="font-mono text-sm bg-secondary/50 min-h-80 max-h-96 overflow-auto custom-scrollbar resize-none"
                 />
                 <div className="flex gap-2">
                   <Button

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://toonconverter.site/sitemap.xml
+Sitemap: https://toontools.site/sitemap.xml
