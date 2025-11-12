@@ -11,7 +11,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: {
     default: "TOON Converter – JSON to TOON",
-    template: "%s | TOON Converter",
+    template: "%s | TOON Converter",  
   },
   description: "Convert JSON to TOON to reduce LLM token usage and improve readability.",
   applicationName: "TOON Converter",

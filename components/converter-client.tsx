@@ -22,6 +22,7 @@ import {
   Upload,
   Code,
   Cpu,
+  Shield,
 } from "lucide-react";
 import { encode } from "@toon-format/toon";
 import { ThemeToggle } from "./theme-toggle";
@@ -135,13 +136,17 @@ export default function ConverterClient() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
-              {/* <Button
-                variant="outline"
+              <Button
                 size="lg"
+                variant="outline"
+                asChild
                 className="transition-transform duration-200 hover:scale-105"
               >
-                Learn More
-              </Button> */}
+                <a href="/api-docs" className="flex items-center gap-2">
+                  <Code className="h-4 w-4" />
+                  View API Documentation
+                </a>
+              </Button>
             </div>
           </div>
         </div>
@@ -286,6 +291,75 @@ export default function ConverterClient() {
                 </p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* API Section */}
+      <section className="py-20 bg-primary/5">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tight">
+              Programmatic Access
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              Integrate TOON conversion into your applications with our REST API
+            </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12">
+            <Card className="border-border/50 bg-card/50 backdrop-blur hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Code className="h-8 w-8 text-primary mb-2" />
+                <CardTitle>REST API</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Simple POST endpoint for JSON to TOON conversion with
+                  comprehensive error handling.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-border/50 bg-card/50 backdrop-blur hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Shield className="h-8 w-8 text-primary mb-2" />
+                <CardTitle>Rate Limited</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  100 requests per hour per IP address to ensure fair usage and
+                  prevent abuse.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-border/50 bg-card/50 backdrop-blur hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <FileText className="h-8 w-8 text-primary mb-2" />
+                <CardTitle>Full Documentation</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Complete API documentation with code examples in multiple
+                  programming languages.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <Button
+              size="lg"
+              variant="outline"
+              asChild
+              className="transition-transform duration-200 hover:scale-105"
+            >
+              <a href="/api-docs" className="flex items-center gap-2">
+                <Code className="h-4 w-4" />
+                View API Documentation
+              </a>
+            </Button>
           </div>
         </div>
       </section>
