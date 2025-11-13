@@ -50,6 +50,7 @@ export const metadata: Metadata = {
         type: "image/svg+xml",
       },
     ],
+    shortcut: "/image.webp",
     apple: "/apple-icon.png",
   },
 }
